@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SheCodes intro class</title>
+    <style>
+      /**
+    normally put into a style.css file.
+    **/
+      h1 {
+        text-align: center;
+        color: palevioletred;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      h2 {
+        text-align: center;
+        border: 1px solid palevioletred;
+        padding: 20px;
+        border-radius: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      img {
+        width: 100%;
+        border-radius: 10px;
+      }
+
+      p {
+        font-size: 20px;
+        line-height: 1.5;
+        text-align: center;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      button {
+        width: 100%;
+        background-color: palevioletred;
+        color: white;
+        border: none;
+        font-size: 20px;
+        border-radius: 30px;
+        padding: 20px;
+        box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+      }
+
+      footer {
+        text-align: center;
+        padding-top: 10px;
+        font-size: 20px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      a {
+        text-decoration: none;
+      }
+      a:hover {
+        color: palevioletred;
+        text-decoration: underline;
+      }
+      a:visited {
+        color: lightcoral;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Yoga</h1>
+    <h2>What is it?</h2>
+    <p>
+      <img
+        src="https://i0.wp.com/www.yogabasics.com/yogabasics2017/wp-content/uploads/2006/04/7788.jpeg?w=1080&ssl=1"
+        alt=""
+      />
+      Yoga is a group of physical, mental, and spiritual practices or
+      disciplines which originated in ancient India and aim to control (yoke)
+      and still the mind, recognizing a detached witness-consciousness untouched
+      by the mind (Chitta) and mundane suffering (Duḥkha). There is a wide
+      variety of schools of yoga, practices, and goals in Hinduism, Buddhism,
+      and Jainism, and traditional and modern yoga is practiced worldwide.
+      <br />
+      <br />
+      Learn more on
+      <a href="https://da.wikipedia.org/wiki/Yoga" target="_blank">Wikipedia</a>
+    </p>
+    <button>Go to a Yoga class</button>
+    <footer>
+      Coded together with
+      <a href="https://www.shecodes.io" target="_blank">SheCodes</a>
+    </footer>
+    <script>
+      //**Normally put into a JS file**//
+      function subscribe() {
+        let name = prompt("What is your name?");
+        prompt("What is your email address?");
+
+        alert(
+          `Thanks, ${name}! We'll be in touch! Meanwhile, don't forget to breathe!`
+        );
+      }
+      let button = document.querySelector("button");
+      button.addEventListener("click", subscribe);
+    </script>
+  </body>
+</html>
